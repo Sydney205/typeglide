@@ -1,6 +1,6 @@
 {
   "name": "typeglide",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Typing effect on terminal",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,16 @@
     "terminal",
     "typer"
   ],
-  "author": "",
+  "author": "sydney205",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sydney205/typeglide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sydney205/typeglide/issues"
+  },
+  "homepage": "https://github.com/Sydney205/typeglide#readme",
   "directories": {
     "lib": "lib"
   }
