@@ -1,5 +1,5 @@
-declare module 'typeout' {
-  interface TypeoutOptions {
+declare module 'typeglide' {
+  interface TypeglideOptions {
     strings: string[];
     typeSpeed?: number | undefined;
     backSpeed?: number | undefined;
@@ -11,7 +11,7 @@ declare module 'typeout' {
     backspaceLastString?: boolean | undefined;
   }
 
-  function typeout(options: TypeoutOptions): Promise<void>;
+  function typeglide: TypeglideOptions): Promise<void>;
 
-  export = typeout;
+  export = typeglide;
 }
