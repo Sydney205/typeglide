@@ -90,8 +90,8 @@ typeglide({
 
 ## Contributions
 
-**Have any features you wish to add?...** Make a [pull request]() to the repository on github.<br>
-Feel free to create [issues]() or provide feedbacks
+**Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typeglide/pulls) to the repository on github.<br>
+Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or provide feedbacks
 
 ### Author:
 
