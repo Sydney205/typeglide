@@ -1,22 +1,22 @@
-# TypeGlide
+# TypeGlide ✈
 
 _`Create typing effect on terminal`_
 
 ---
 
-[Installation](#installation)
+[Installation](#📦-installation)
 
-[Quick Start](#quick-start)
+[Quick Start](#🚀-quick-start)
 
-[Speeds and Delays](#speeds-and-delays)
+[Speeds and Delays](#speeds-and-delays-⏱⚡)
 
-[Loops](#loops)
+[Loops](#loops-🔁)
 
-[Contributions](#contributions)
+[Contributions](#contributions-🤝🏻)
 
 ---
 
-### Installation
+### 📦 Installation
 
 _install with [npm](https://www.npmjs.com/)_:
 
@@ -24,7 +24,7 @@ _install with [npm](https://www.npmjs.com/)_:
 npm install typeglide
 ```
 
-### Quick start
+### 🚀 Quick start
 
 _`Jump into action`_
 
@@ -38,13 +38,13 @@ var myArray = [
 ];
 
 typeglide({
-  strings: myArrays,
+  strings: myArray,
 });
 ```
 
 ---
 
-### Speeds and Delays
+### Speeds and Delays ⏱⚡
 
 _`Customize typing and backspacing speed including delays`_
 
@@ -67,7 +67,7 @@ typeglide({
 
 ---
 
-### Loops
+### Loops 🔁
 
 _`Make loops...`_
 
@@ -88,15 +88,15 @@ typeglide({
 <br>
 <br>
 
-## Contributions
+## Contributions 🤝🏻
 
 **Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typeglide/pulls) to the repository on github.<br>
-Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or provide feedbacks
+Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or provide feedbacks!.
 
 ### Author:
 
 [Sydney205](https://github.com/Sydney205)
 
-## License
+## License 📄
 
 Copyright (c) 2023 Dieke Sydney
