@@ -99,4 +99,4 @@ Feel free to create [issues]() or provide feedbacks
 
 ## License
 
-Copyright (c) 2024 Dieke Sydney
+Copyright (c) 2023 Dieke Sydney
