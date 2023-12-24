@@ -1,6 +1,6 @@
 {
   "name": "typeglide",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Typing effect on terminal",
   "main": "index.js",
   "scripts": {
