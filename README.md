@@ -1,8 +1,7 @@
 # TypeGlide ✈
 
-_`Create typing effect on terminal`_
+### _Create typing effect on terminal_
 
----
 
 [Installation](#📦-installation)
 
@@ -13,6 +12,8 @@ _`Create typing effect on terminal`_
 [Loops](#loops-🔁)
 
 [Contributions](#contributions-🤝🏻)
+
+[Extra features](#typeglide-also-supprts-other-properties-like)
 
 ---
 
@@ -83,7 +84,17 @@ typeglide({
 });
 ```
 
-#### _`And Many more...`_
+<br>
+
+### _Typeglide also supprts other properties like:_
+<br>
+
+
+| Name  | Required | Default  | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| backspace(bool) | no | true | Disable backspace to type each string on a new line |
+| backspaceLastString(bool) | no | true | Whether to backspace last string on the array |
+| shuffle(bool) | no | false | Shuffle the strings on the array |
 
 <br>
 <br>
@@ -100,3 +111,4 @@ Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or p
 ## License 📄
 
 Copyright (c) 2023 Dieke Sydney
+
