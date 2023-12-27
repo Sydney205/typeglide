@@ -11,7 +11,8 @@
     "typing effect",
     "nodejs",
     "terminal",
-    "typer"
+    "typer",
+    "cli",
   ],
   "author": "sydney205",
   "license": "MIT",
