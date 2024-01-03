@@ -24,7 +24,7 @@ declare module "typeglide" {
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typeglide@0.0.10
+   * @version typeglide@1.0.0
    */
   function typeglide(options: TypeOptions): Promise<void>;
 
