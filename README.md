@@ -86,7 +86,7 @@ typeglide({
 
 <br>
 
-### _Typeglide also supprts other properties like:_
+### _Typeglide also supports other features like:_
 <br>
 
 
@@ -95,8 +95,9 @@ typeglide({
 | backspace(bool) | no | true | Disable backspace to type each string on a new line |
 | backspaceLastString(bool) | no | true | Whether to backspace last string on the array |
 | shuffle(bool) | no | false | Shuffle the strings on the array |
+| singleLine(bool) | no | false | Types strings on a single line |
+| seperator(string) | when `singleLine` is activated | empty string | Seperate strings on single line |
 
-<br>
 <br>
 
 ## Contributions 🤝🏻
