@@ -1,7 +1,7 @@
-var { sleep } = require("../lib/util.js");
+const { sleep } = require("../lib/sleep")
 
 function typeglide({
-  strings,
+  strings = [],
   typeSpeed = 50,
   backSpeed = 20,
   startDelay = 100,
@@ -11,48 +11,60 @@ function typeglide({
   backspace = true,
   backspaceLastString = true,
   shuffle = false,
+  singleLine = false,
+  seperator = "",
 }) {
   return new Promise((resolve) => {
-
     let shuffledStrings = strings
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-    
+
     async function typeString(index = 0) {
       if (index < strings.length) {
+        let string, lastString, charCounter, sepChar;
+
+        sepChar = 0;
+        charCounter = 0;
+        lastString = strings.length - 1;
+
         if (!shuffle) {
-          var string = strings[index];
+          string = strings[index];
         } else {
           // Shuffle the strings if `shuffle` is activated
-          var string = shuffledStrings[index];
+          string = shuffledStrings[index];
         }
-
-        let counter = 0;
 
         await sleep(startDelay);
 
-        while (counter < string.length) {
+        while (charCounter < string.length) {
           // Typing simulator
-          process.stdout.write(string[counter]);
+          process.stdout.write(string[charCounter]);
           await sleep(typeSpeed);
-          counter++;
+          charCounter++;
         }
 
         await sleep(backDelay);
 
-        if (backspace && !backspaceLastString && index == strings.length - 1) {
+        if (backspace && !backspaceLastString && index == lastString) {
           process.stdout.write("\n");
           // We exit to prevent backspacing the last string
           process.exit();
         }
 
         if (backspace) {
-          while (counter > 0) {
+          while (charCounter > 0) {
             // Backspace simulator
             process.stdout.write("\b \b");
             await sleep(backSpeed);
-            counter--;
+            charCounter--;
+          }
+        } else if (singleLine && !backspace && index != lastString) {
+          // write strings out on a single line with a seperator between strings
+          while (sepChar < seperator.length) {
+            process.stdout.write(seperator[sepChar]);
+            await sleep(typeSpeed);
+            sepChar++;
           }
         } else {
           process.stdout.write("\n");
