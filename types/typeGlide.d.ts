@@ -20,11 +20,15 @@ declare module "typeglide" {
     backspaceLastString?: boolean | undefined;
     /** Shuffle the strings on the array */
     shuffle?: boolean | undefined;
+    /** Type strings on a single line */
+    singleLine?: boolean | undefined
+    /** Seperate strings on single line */
+    seperator?: string | undefined
   }
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typeglide@1.0.0
+   * @version typeglide@1.1.0
    */
   function typeglide(options: TypeOptions): Promise<void>;
 
