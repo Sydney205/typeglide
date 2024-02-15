@@ -1,13 +1,13 @@
 /**
- * @package Typing - Create typing effect on terminal
+ * @package TypeGlide - Create typeglide effect on terminal
  * @author Sydney205 <https://github.com/Sydney205>
  * @version 1.1.3
- * @url https://github.com/Sydney205/typing
+ * @url https://github.com/Sydney205/typeglide
  * @license MIT
  * @copyright (c) Dieke Sydney
  *
  */
 
-const typing = require("./src/typing");
+const typeglide = require("./src/typeglide");
 
-module.exports = typing;
+module.exports = typeglide;

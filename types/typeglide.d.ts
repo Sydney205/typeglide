@@ -1,4 +1,4 @@
-declare module "typing" {
+declare module "typeglide" {
   interface TypeOptions {
     /** An array of strings to be typed. */
     strings: string[];
@@ -30,10 +30,10 @@ declare module "typing" {
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typing@1.1.3
+   * @version typeglide@1.1.3
    */
-  function typing(options: TypeOptions): Promise<void>;
+  function typeglide(options: TypeOptions): Promise<void>;
 
-  export = typing;
+  export = typeglide;
 }
 

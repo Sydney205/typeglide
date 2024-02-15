@@ -1,4 +1,4 @@
-# Typing ✈
+# TypeGlide ✈
 
 ### _Create typing effect on terminal_
 
@@ -22,7 +22,7 @@
 _install with [npm](https://www.npmjs.com/)_:
 
 ```sh
-npm install typing
+npm install typeglide
 ```
 
 ### 🚀 Quick start
@@ -30,7 +30,7 @@ npm install typing
 _`Jump into action`_
 
 ```js
-const typing = require("typing");
+const typeglide = require("typeglide");
 
 var myArray = [
   "Good morning",
@@ -38,7 +38,7 @@ var myArray = [
   "Would you like a cup of coffee?",
 ];
 
-typing({
+typeglide({
   strings: myArray,
 });
 ```
@@ -50,9 +50,9 @@ typing({
 _`Customize typing and backspacing speed including delays`_
 
 ```js
-const typing = require("typing");
+const typeglide = require("typeglide");
 
-typing({
+typeglide({
   // Strings to be typed
   strings: myArray,
   // Typing speed
@@ -73,9 +73,9 @@ typing({
 _`Make loops...`_
 
 ```js
-const typing = require("typing");
+const typeglide = require("typeglide");
 
-typing({
+typeglide({
   strings: myArray,
   // Activating the loops
   loop: true,
@@ -102,8 +102,8 @@ typing({
 
 ## Contributions 🤝🏻
 
-**Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typing/pulls) to the repository on github.<br>
-Feel free to create [issues](https://github.com/Sydney205/typing/issues) or provide feedbacks!.
+**Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typeglide/pulls) to the repository on github.<br>
+Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or provide feedbacks!.
 
 ### Author:
 

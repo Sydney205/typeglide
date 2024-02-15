@@ -1,6 +1,6 @@
 const { sleep } = require("../utils/sleep");
 
-function typing({
+function typeglide({
   strings,
   typeSpeed = 50,
   backSpeed = 20,
@@ -83,5 +83,5 @@ function typing({
   });
 }
 
-module.exports = typing
+module.exports = typeglide
 
