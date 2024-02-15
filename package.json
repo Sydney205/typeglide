@@ -1,6 +1,6 @@
 {
   "name": "typeglide",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Typing effect on terminal",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,11 @@
   },
   "types": "./types/typeGlide.d.ts",
   "keywords": [
+    "typewriter effect",
     "typing effect",
     "nodejs",
     "terminal",
-    "key",
+    "console",
     "cli"
   ],
   "author": {
