@@ -1,4 +1,4 @@
-declare module "typeglide" {
+declare module "typing" {
   interface TypeOptions {
     /** An array of strings to be typed. */
     strings: string[];
@@ -10,6 +10,8 @@ declare module "typeglide" {
     startDelay?: number | undefined;
     /** The delay before backspacing in milliseconds */
     backDelay?: number | undefined;
+    /** The delay between strings on a single line */
+    delayBetweenStrings?: number | undefined;
     /** Whether to loop through the strings on the array */
     loop?: boolean | undefined;
     /** The number of time to loop if looping is activated */
@@ -28,10 +30,10 @@ declare module "typeglide" {
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typeglide@1.1.0
+   * @version typing@1.1.2
    */
-  function typeglide(options: TypeOptions): Promise<void>;
+  function typing(options: TypeOptions): Promise<void>;
 
-  export = typeglide;
+  export = typing;
 }
 
