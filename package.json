@@ -1,12 +1,12 @@
 {
-  "name": "typeglide",
+  "name": "typing",
   "version": "1.1.2",
   "description": "Typing effect on terminal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "types": "./types/typeGlide.d.ts",
+  "types": "./types/typing.d.ts",
   "keywords": [
     "typewriter effect",
     "typing effect",
@@ -22,12 +22,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sydney205/typeglide.git"
+    "url": "git+https://github.com/Sydney205/typing.git"
   },
   "bugs": {
-    "url": "https://github.com/Sydney205/typeglide/issues"
+    "url": "https://github.com/Sydney205/typing/issues"
   },
-  "homepage": "https://github.com/Sydney205/typeglide#readme",
+  "homepage": "https://github.com/Sydney205/typing#readme",
   "directories": {
     "lib": "lib"
   }
