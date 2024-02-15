@@ -1,4 +1,4 @@
-# TypeGlide ✈
+# Typing ✈
 
 ### _Create typing effect on terminal_
 
@@ -13,7 +13,7 @@
 
 [Contributions](#contributions-🤝🏻)
 
-[Extra features](#typeglide-also-supprts-other-properties-like)
+[Extra features](#extra-features)
 
 ---
 
@@ -22,7 +22,7 @@
 _install with [npm](https://www.npmjs.com/)_:
 
 ```sh
-npm install typeglide
+npm install typing
 ```
 
 ### 🚀 Quick start
@@ -30,7 +30,7 @@ npm install typeglide
 _`Jump into action`_
 
 ```js
-const typeglide = require("typeglide");
+const typing = require("typing");
 
 var myArray = [
   "Good morning",
@@ -38,7 +38,7 @@ var myArray = [
   "Would you like a cup of coffee?",
 ];
 
-typeglide({
+typing({
   strings: myArray,
 });
 ```
@@ -50,9 +50,9 @@ typeglide({
 _`Customize typing and backspacing speed including delays`_
 
 ```js
-const typeglide = require("typeglide");
+const typing = require("typing");
 
-typeglide({
+typing({
   // Strings to be typed
   strings: myArray,
   // Typing speed
@@ -73,9 +73,9 @@ typeglide({
 _`Make loops...`_
 
 ```js
-const typeglide = require("typeglide");
+const typing = require("typing");
 
-typeglide({
+typing({
   strings: myArray,
   // Activating the loops
   loop: true,
@@ -86,7 +86,7 @@ typeglide({
 
 <br>
 
-### _Typeglide also supports other features like:_
+### _Extra features:_
 <br>
 
 
@@ -96,14 +96,14 @@ typeglide({
 | backspaceLastString(bool) | no | true | Whether to backspace last string on the array |
 | shuffle(bool) | no | false | Shuffle the strings on the array |
 | singleLine(bool) | no | false | Types strings on a single line |
-| seperator(string) | when `singleLine` is activated | empty string | Seperate strings on single line |
+| seperator(string) | when `singleLine` is activated | space | Seperate strings on single line |
 
 <br>
 
 ## Contributions 🤝🏻
 
-**Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typeglide/pulls) to the repository on github.<br>
-Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or provide feedbacks!.
+**Have any features you wish to add?...** Make a [pull request](https://github.com/Sydney205/typing/pulls) to the repository on github.<br>
+Feel free to create [issues](https://github.com/Sydney205/typing/issues) or provide feedbacks!.
 
 ### Author:
 
