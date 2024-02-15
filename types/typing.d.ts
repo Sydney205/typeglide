@@ -30,7 +30,7 @@ declare module "typing" {
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typing@1.1.2
+   * @version typing@1.1.3
    */
   function typing(options: TypeOptions): Promise<void>;
 
