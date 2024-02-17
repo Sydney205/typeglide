@@ -24,7 +24,9 @@ declare module "typeglide" {
     shuffle?: boolean | undefined;
     /** Type strings on a single line */
     singleLine?: boolean | undefined
-    /** Seperate strings on single line */
+    /** Seperate strings on single line 
+        Only takes effect when `backspace` is deactivated
+    */
     seperator?: string | undefined
   }
 

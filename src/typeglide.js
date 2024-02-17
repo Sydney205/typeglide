@@ -22,62 +22,68 @@ function typeglide({
       .map(({ value }) => value);
 
     async function typeString(i = 0) {
-      if (i < strings.length) {
-        let str, lastString;
-        let j = 0; let k = 0
+      try {
+        if (i < strings.length) {
+          let str, lastString;
+          let j = 0; let k = 0
 
-        lastString = strings.length - 1;
+          lastString = strings.length - 1;
 
-        if (!shuffle) {
-          str = strings[i];
-        } else {
-          str = shuffleString[i];
-        }
-
-        await sleep(startDelay);
-
-        while (j < str.length) {
-          process.stdout.write(str[j]);
-          await sleep(typeSpeed);
-          j++;
-        }
-
-        if (backspace && !backSpaceLastString && i == lastString) {
-          process.stdout.write("\n");
-          process.exit(); // we exit to prevent backspacing the last string
-        }
-
-
-        if (backspace) {
-          await sleep(backDelay);
-
-          while (j > 0) {
-            process.stdout.write("\b \b");
-            await sleep(backSpeed);
-            j--;
+          if (!shuffle) {
+            str = strings[i];
+          } else {
+            str = shuffleString[i];
           }
-        } else if (!backspace && singleLine && i != lastString) {
-          await sleep(delayBetweenStrings)
 
-          while (k < seperator.length) {
-            process.stdout.write(seperator[k]);
+          await sleep(startDelay);
+
+          while (j < str.length) {
+            process.stdout.write(str[j]);
             await sleep(typeSpeed);
-            k++;
+            j++;
           }
-        } else {
-          process.stdout.write("\n");
-        }
 
-        i++;
-        await sleep(startDelay);
-        await typeString(i);
-      } else if (loop && loopCounter < loopCount) {
-        loopCounter++;
-        typeString(0);
-      } else {
-        resolve();
+          if (backspace && !backSpaceLastString && i == lastString) {
+            process.stdout.write("\n");
+            process.exit(); // we exit to prevent backspacing the last string
+          }
+
+
+          if (backspace) {
+            await sleep(backDelay);
+
+            while (j > 0) {
+              process.stdout.write("\b \b");
+              await sleep(backSpeed);
+              j--;
+            }
+          } else if (!backspace && singleLine && i !== lastString) {
+            await sleep(delayBetweenStrings)
+
+            while (k < seperator.length) {
+              process.stdout.write(seperator[k]);
+              await sleep(typeSpeed);
+              k++;
+            }
+          } else {
+            process.stdout.write("\n");
+          }
+
+          i++;
+          await sleep(startDelay);
+          await typeString(i);
+        } else if (loop && loopCounter < loopCount) {
+          loopCounter++;
+          typeString(0);
+        } else {
+          resolve();
+        }
+      } 
+      catch (error) {
+        console.log(`Error: ${error.message}`)
       }
     }
+    
     let loopCounter = 1;
     typeString(0);
   });
