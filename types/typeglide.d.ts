@@ -28,11 +28,13 @@ declare module "typeglide" {
         Only takes effect when `backspace` is deactivated
     */
     seperator?: string | undefined
+    /** Add code highlighting and colors */
+    codeHighlight?: boolean | undefined
   }
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typeglide@1.1.3
+   * @version typeglide@1.2.3
    */
   function typeglide(options: TypeOptions): Promise<void>;
 
