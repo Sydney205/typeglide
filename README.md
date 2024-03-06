@@ -1,7 +1,6 @@
-# TypeGlide ✈
+# Typeglide
 
-### _Create typing effect on terminal_
-
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=34B1F7&random=false&width=435&lines=Create+typing+effect+on+terminal)](https://git.io/typing-svg)
 
 [Installation](#📦-installation)
 
@@ -13,7 +12,7 @@
 
 [Contributions](#contributions-🤝🏻)
 
-[Extra features](#extra-features)
+[Extra features](#typeglide-also-supprts-other-features-like)
 
 ---
 
@@ -77,7 +76,7 @@ const typeglide = require("typeglide");
 
 typeglide({
   strings: myArray,
-  // Activating the loops
+  // Activating loop
   loop: true,
   // Number of times you want to loop
   loopCount: 3,
@@ -87,16 +86,16 @@ typeglide({
 <br>
 
 ### _Extra features:_
+
 <br>
 
-
-| Name  | Required | Default  | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| backspace(bool) | no | true | Disable backspace to type each string on a new line |
-| backspaceLastString(bool) | no | true | Whether to backspace last string on the array |
-| shuffle(bool) | no | false | Shuffle the strings on the array |
-| singleLine(bool) | no | false | Types strings on a single line |
-| seperator(string) | when `singleLine` is activated | space | Seperate strings on single line |
+| Name                      | Required                       | Default      | Description                                         |
+| ------------------------- | ------------------------------ | ------------ | --------------------------------------------------- |
+| backspace(bool)           | no                             | true         | Disable backspace to type each string on a new line |
+| backspaceLastString(bool) | no                             | true         | Whether to backspace last string on the array       |
+| shuffle(bool)             | no                             | false        | Shuffle the strings on the array                    |
+| singleLine(bool)          | no                             | false        | Types strings on a single line                      |
+| seperator(string)         | when `singleLine` is activated | empty string | Seperate strings on single line                     |
 
 <br>
 
@@ -111,5 +110,4 @@ Feel free to create [issues](https://github.com/Sydney205/typeglide/issues) or p
 
 ## License 📄
 
-Copyright (c) 2023 Dieke Sydney
-
+Copyright (c) 2024 Dieke Sydney
