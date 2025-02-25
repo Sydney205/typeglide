@@ -29,7 +29,7 @@ npm install typeglide
 _`Jump into action`_
 
 ```js
-const typeglide = require("typeglide");
+import typeglide from "typeglide";
 
 var myArray = [
   "Good morning",
@@ -49,7 +49,7 @@ typeglide({
 _`Customize typing and backspacing speed including delays`_
 
 ```js
-const typeglide = require("typeglide");
+import typeglide from "typeglide";
 
 typeglide({
   // Strings to be typed
@@ -72,7 +72,7 @@ typeglide({
 _`Make loops...`_
 
 ```js
-const typeglide = require("typeglide");
+import typeglide from "typeglide";
 
 typeglide({
   strings: myArray,
