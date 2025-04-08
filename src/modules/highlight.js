@@ -1,6 +1,12 @@
-// Function to colorize strings
+/**
+ * Colorize keywords in code...
+ * 
+ * @param {string} string 
+ * @param {object} colorMap 
+ * @param {number} quoteCode 
+ * @returns 
+ */
 const highlight = (string, colorMap, quoteCode) => {
-//   let coloredText = tex/t;
 
   const QUOTE_REGEX = /(["'])(?:(?=(\\?))\2.)*?\1/g;
   string = string.replace(

@@ -65,8 +65,6 @@ function typeglide({
         } else {
           process.stdout.write("\n");
         }
-
-        // Move to the next string and recursively call the function
         i++;
         await sleep(startDelay);
         await typeString(i);
@@ -74,12 +72,10 @@ function typeglide({
         loopCounter++;
         typeString(0);
       } else {
-        // Resolve the promise when finished
         resolve();
       }
     }
 
-    // Shuffle the strings if required
     const shuffleString = strings
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
@@ -87,7 +83,6 @@ function typeglide({
 
     let loopCounter = 1;
 
-    // Kick start
     typeString(0);
   });
 }

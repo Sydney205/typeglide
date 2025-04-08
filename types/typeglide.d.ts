@@ -27,14 +27,14 @@ declare module "typeglide" {
     /** Seperate strings on single line 
         Only takes effect when `backspace` is deactivated
     */
-    seperator?: string | undefined
+    separator?: string | undefined
     /** Add code highlighting and colors */
     codeHighlight?: boolean | undefined
   }
 
   /**
    * Typeglide - Create typing effect on terminal
-   * @version typeglide@1.2.4
+   * @version typeglide@1.2.3
    */
   function typeglide(options: TypeOptions): Promise<void>;
 
